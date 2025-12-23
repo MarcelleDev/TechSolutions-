@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Encurtador de URLs</title>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Chart.js (para futuras analytics) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Efeitos de fundo -->
+    <div class="background-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="grid-pattern"></div>
+        <div class="noise-texture"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <span class="logo-text">
+                    Tech<span class="gradient-text">Solutions</span>
+                </span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">Recursos</a>
+                <a href="#" class="nav-link">Preços</a>
+                <a href="#" class="nav-link">API</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    Encurtador de URLs rápido e seguro
+                </div>
+                
+                <h1 class="hero-title">
+                    Transforme links longos em 
+                    <span class="gradient-text">URLs curtas</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Simplifique seus links, rastreie cliques e compartilhe com facilidade.
+                    A solução perfeita para profissionais de marketing e desenvolvedores.
+                </p>
+            </section>
+
+            <!-- URL Shortener -->
+            <section class="url-shortener-section">
+                <div class="url-form-container glass">
+                    <div class="url-input-group">
+                        <i class="fas fa-link input-icon"></i>
+                        <input 
+                            type="url" 
+                            id="urlInput" 
+                            class="url-input" 
+                            placeholder="Cole sua URL longa aqui..."
+                        >
+                    </div>
+                    <button id="shortenBtn" class="btn btn-glow">
+                        <i class="fas fa-magic"></i>
+                        Encurtar URL
+                    </button>
+                </div>
+
+                <!-- Resultados -->
+                <div id="resultsSection" class="results-section hidden">
+                    <h3 class="results-title">URLs Recentes</h3>
+                    <div id="urlList" class="url-list">
+                        <!-- URLs serão adicionadas aqui -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="stat-title">Ultra Rápido</h3>
+                    <p class="stat-description">Links gerados instantaneamente</p>
+                </div>
+                
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="stat-title">Seguro</h3>
+                    <p class="stat-description">Criptografia de ponta a ponta</p>
+                </div>
+                
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="stat-title">Analytics</h3>
+                    <p class="stat-description">Rastreie todos os cliques</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 TechSolutions. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
